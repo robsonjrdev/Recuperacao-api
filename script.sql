@@ -1,0 +1,23 @@
+CREATE DATABASE Chapter 
+GO
+
+USE Chapter
+GO
+
+CREATE TABLE Livros(
+	Id INT PRIMARY KEY IDENTITY,
+	Titutlo VARCHAR(150) NOT NULL,
+	QuantidadePaginas INT,
+	Disponivel BIT
+)
+GO
+
+INSERT INTO Livros 
+VALUES ('Livro1',150,1)
+GO
+
+INSERT INTO Livros 
+VALUES ('Livro2',550,1)
+GO
+
+SELECT * FROM Livros
